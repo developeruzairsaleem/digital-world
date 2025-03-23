@@ -7,6 +7,7 @@ import { PiPaperclipHorizontal } from "react-icons/pi";
 import { TbCardsFilled } from "react-icons/tb";
 
 import { PiCardsFill } from "react-icons/pi";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
 
       <section id="services" className="py-16 max-w-[1100px]  mx-auto p-2">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-pink-900 mb-8">
+          <h2 className="text-3xl font-bold text-center pb-16 text-pink-900 mb-8">
             Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -124,7 +125,7 @@ export default function Home() {
         className="py-24 bg-white max-w-[1100px]  mx-auto p-2"
       >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-pink-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-pink-900 py-16 text-center mb-12">
             Why Choose Digital World
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -314,6 +315,80 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-white text-pink-800">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-gray-500 text-3xl md:text-4xl font-bold mb-4">
+            Ready to Transform Your Printing Experience?
+          </h2>
+          <p className="text-gray-500 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            At Digital World, we blend creativity with quality to deliver
+            premium printing solutions—from stunning wedding cards to
+            eye-catching penaflex designs and professional visiting cards. Let’s
+            bring your vision to life!
+          </p>
+          {/* Contact Form */}
+          <form
+            action="/api/contact" /* Update this endpoint as needed */
+            method="POST"
+            className="max-w-xl mx-auto bg-white text-left rounded-lg p-8 shadow-2xl"
+          >
+            <div className="mb-4">
+              <label
+                htmlFor="name"
+                className="block text-gray-700 font-semibold mb-2"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-gray-700 font-semibold mb-2"
+              >
+                Phone
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone Number"
+                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="message"
+                className="block text-gray-700 font-semibold mb-2"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-pink-800 text-white font-semibold py-3 px-4 rounded hover:bg-pink-900 transition duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
