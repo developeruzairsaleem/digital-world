@@ -1,12 +1,17 @@
+"use client";
+
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
+import Link from "next/link";
+import { FaCheck } from "react-icons/fa";
 
 // app/services/wedding-cards/page.jsx
 export default function WeddingCardsPage() {
   return (
     <main className="">
       {/* Hero Section */}
-      <section className=" bg-white h-screen p-2 max-w-[1100px] mx-auto">
+      <section className=" bg-white h-screen p-2 max-w-[1100px] md:mx-auto">
         <Navbar />
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl mt-7 font-bold text-gray-800 mb-4">
@@ -18,19 +23,19 @@ export default function WeddingCardsPage() {
             attention to detail ensure that your special day is celebrated in
             style.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-pink-800 text-white font-semibold py-3 px-8 rounded-full shadow hover:bg-pink-900 transition duration-300"
           >
-            Request a Quote
-          </a>
+            Let's Connect{" "}
+          </Link>
         </div>
       </section>
 
       {/* Service Details Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
+      <section className="p-2 max-w-[1100px] mx-auto py-16">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 Why Our Wedding Cards Stand Out
@@ -42,17 +47,31 @@ export default function WeddingCardsPage() {
                 your invitation is a true reflection of your personality.
               </p>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Custom Designs Tailored to Your Theme</li>
-                <li>High-Quality, Durable Materials</li>
-                <li>Advanced Printing Technology for Vivid Colors</li>
-                <li>Quick Turnaround Times</li>
+                <li className="flex items-center gap-5">
+                  <FaCheck className="text-pink-800" />
+                  Custom Designs Tailored to Your Theme
+                </li>
+                <li className="flex items-center gap-5">
+                  <FaCheck className="text-pink-800" />
+                  High-Quality, Durable Materials
+                </li>
+                <li className="flex items-center gap-5">
+                  <FaCheck className="text-pink-800" />
+                  Advanced Printing Technology for Vivid Colors
+                </li>
+                <li className="flex items-center gap-5">
+                  <FaCheck className="text-pink-800" />
+                  Quick Turnaround Times
+                </li>
               </ul>
             </div>
-            <div className="md:w-1/2 flex justify-center">
-              <img
-                src="/images/wedding-cards-hero.jpg"
+            <div className="md:w-1/2 hidden md:flex justify-end">
+              <Image
+                src="/images/wedding-card-1.jpg"
                 alt="Elegant Wedding Cards"
                 className="rounded-lg shadow-lg max-w-full"
+                width={400}
+                height={400}
               />
             </div>
           </div>
@@ -60,49 +79,61 @@ export default function WeddingCardsPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="p-2 max-w-[1100px] mx-auto py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Our Recent Designs
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Replace these images with your actual wedding card designs */}
-            <img
-              src="/images/wedding-card-1.jpg"
+            <Image
+              src="/images/wedding-card-1.webp"
               alt="Wedding Card Design 1"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
-            <img
-              src="/images/wedding-card-2.jpg"
+            <Image
+              src="/images/wedding-2.jpg"
               alt="Wedding Card Design 2"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
-            <img
-              src="/images/wedding-card-3.jpg"
+            <Image
+              src="/images/wedding-3.jpg"
               alt="Wedding Card Design 3"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
-            <img
-              src="/images/wedding-card-4.jpg"
+            <Image
+              src="/images/wedding-4.jpg"
               alt="Wedding Card Design 4"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
-            <img
-              src="/images/wedding-card-5.jpg"
+            <Image
+              src="/images/wedding-5.jpg"
               alt="Wedding Card Design 5"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
-            <img
-              src="/images/wedding-card-6.jpg"
+            <Image
+              src="/images/wedding-6.jpg"
               alt="Wedding Card Design 6"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="hover:scale-110 transition-all hover:transition-transform w-full h-64 object-cover rounded-lg shadow-md"
+              width={200}
+              height={200}
             />
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16">
+      <section className="p-2 max-w-[1100px] mx-auto py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             What Our Clients Say
@@ -132,7 +163,7 @@ export default function WeddingCardsPage() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-indigo-600">
+      <section className="py-16 bg-pink-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Create Your Dream Wedding Card?
@@ -141,12 +172,12 @@ export default function WeddingCardsPage() {
             Let Digital World bring your vision to life with our custom wedding
             card designs and premium printing services.
           </p>
-          <a
+          <Link
             href="/contact"
-            className="inline-block bg-white text-indigo-600 font-semibold py-3 px-8 rounded-full shadow hover:bg-gray-100 transition duration-300"
+            className="inline-block bg-white text-pink-800 font-semibold py-3 px-8 rounded-full shadow hover:bg-gray-100 transition duration-300"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
       <Footer />

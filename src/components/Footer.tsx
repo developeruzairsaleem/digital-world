@@ -1,15 +1,15 @@
 // components/Footer.jsx
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-10">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-900 text-gray-300 p-2 pt-10 ">
+      <div className="container px-4 max-w-[1100px] mx-auto">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-gray-700">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Digital World</h3>
             <p className="text-sm mb-4">
-              Your trusted local printing partner in Rawalpindi, offering
+              Your trusted local printing press in Rawalpindi Pakistan, offering
               premium wedding cards, penaflex designs, and visiting cards at
               affordable prices.
             </p>

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -8,16 +8,17 @@ import { TbCardsFilled } from "react-icons/tb";
 
 import { PiCardsFill } from "react-icons/pi";
 import Footer from "@/components/Footer";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <div className="">
-      <header className="max-w-[1100px]  mx-auto p-2  home_header min-h-screen ">
+      <header className="max-w-[1100px]  md:mx-auto p-2  home_header min-h-screen ">
         <div className="absolute top-1/3 left-1/3 w-50 h-50 -z-10 bg-blue-200 blur-3xl pointer-events-none"></div>
         <div className="absolute top-2/4 left-1/3 w-50 h-50 -z-10 bg-pink-200 blur-3xl pointer-events-none"></div>
         <Navbar />
-        <div className="flex justify-between items-center">
-          <div className="w-2/4">
+        <div className="flex flex-wrap justify-between  items-center mt-10">
+          <div className="w-full md:w-2/4 ">
             <h1 className="text-5xl text-blue-900 mb-5">
               Digital World <br /> Your Trusted Local Printing Press
             </h1>
@@ -38,7 +39,7 @@ export default function Home() {
           <Image
             src={"/images/wedding-card.png"}
             alt="wedding card"
-            className="rounded-2xl w-1/3"
+            className="rounded-2xl md:w-1/3 hidden md:block"
             width={700}
             height={700}
           />
@@ -57,7 +58,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Wedding Cards */}
-            <div className="bg-white h-80 p-6 rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
+            <div className="bg-white hover:scale-110 transition-all h-80 p-6 rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
               <div className="mb-4">
                 {/* Wedding card icon (replace with your preferred icon) */}
                 <TbCardsFilled className="text-6xl text-pink-700" />
@@ -77,7 +78,7 @@ export default function Home() {
               </Link>
             </div>
             {/* Penaflex Printing */}
-            <div className="bg-white p-6 h-80 rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
+            <div className="bg-white p-6 h-80 hover:scale-110 transition-all rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
               <div className="mb-4">
                 {/* Penaflex icon (replace with your preferred icon) */}
                 <PiPaperclipHorizontal className="text-6xl text-pink-700" />
@@ -97,7 +98,7 @@ export default function Home() {
               </Link>
             </div>
             {/* Visiting Cards */}
-            <div className="bg-white p-6 h-80 rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
+            <div className="bg-white p-6 h-80 rounded-xl hover:scale-110 transition-all shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
               <div className="mb-4">
                 <PiCardsFill className="text-6xl text-pink-700" />
               </div>
@@ -276,12 +277,12 @@ export default function Home() {
 
       <section id="about" className=" bg-pink-900">
         <h2 className="text-4xl  text-center pt-16 font-bold text-white mb-8">
-          About Digital World
+          About Our Printing Press
         </h2>
-        <div className="container flex flex-col md:flex-row items-center  max-w-[1100px]  mx-auto p-2">
+        <div className="container flex flex-col md:flex-row  max-w-[1100px]  mx-auto p-2">
           {/* Text Content */}
 
-          <div className="md:w-1/2 text-lg font-light mb-8 p-8 md:mb-0">
+          <div className="md:w-1/2 text-lg  mb-8 p-8 md:mb-0">
             <p className="text-white mb-4">
               Digital World is a leading printing press based in Rawalpindi,
               dedicated to delivering high-quality printing solutions at
@@ -308,7 +309,7 @@ export default function Home() {
             <Image
               src="/images/digitalworld.jpg"
               alt="Digital World Printing Press"
-              className="  h-full"
+              className="  h-full rounded-xl"
               width={600}
               height={600}
             />
@@ -328,64 +329,8 @@ export default function Home() {
             bring your vision to life!
           </p>
           {/* Contact Form */}
-          <form
-            action="/api/contact" /* Update this endpoint as needed */
-            method="POST"
-            className="max-w-xl mx-auto bg-white text-left rounded-lg p-8 shadow-2xl"
-          >
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
-              />
-            </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="phone"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Phone
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Your Phone Number"
-                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message"
-                className="w-full border text-black border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-800"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-pink-800 text-white font-semibold py-3 px-4 rounded hover:bg-pink-900 transition duration-300"
-            >
-              Submit
-            </button>
-          </form>
+          {/* // form/ */}
+          <Form />
         </div>
       </section>
       <Footer />
