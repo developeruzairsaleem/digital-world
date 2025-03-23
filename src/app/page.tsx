@@ -10,8 +10,8 @@ import { PiCardsFill } from "react-icons/pi";
 
 export default function Home() {
   return (
-    <div className="max-w-[1100px]  mx-auto p-2">
-      <header className=" home_header min-h-screen ">
+    <div className="">
+      <header className="max-w-[1100px]  mx-auto p-2  home_header min-h-screen ">
         <div className="absolute top-1/3 left-1/3 w-50 h-50 -z-10 bg-blue-200 blur-3xl pointer-events-none"></div>
         <div className="absolute top-2/4 left-1/3 w-50 h-50 -z-10 bg-pink-200 blur-3xl pointer-events-none"></div>
         <Navbar />
@@ -49,7 +49,7 @@ export default function Home() {
         </h2>
       </section> */}
 
-      <section id="services" className="py-16">
+      <section id="services" className="py-16 max-w-[1100px]  mx-auto p-2">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-pink-900 mb-8">
             Our Services
@@ -119,7 +119,10 @@ export default function Home() {
       </section>
 
       {/* why choose us */}
-      <section id="why-choose-us" className="py-24 bg-white">
+      <section
+        id="why-choose-us"
+        className="py-24 bg-white max-w-[1100px]  mx-auto p-2"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-pink-900 text-center mb-12">
             Why Choose Digital World
@@ -266,6 +269,48 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className=" bg-pink-900">
+        <h2 className="text-4xl  text-center pt-16 font-bold text-white mb-8">
+          About Digital World
+        </h2>
+        <div className="container flex flex-col md:flex-row items-center  max-w-[1100px]  mx-auto p-2">
+          {/* Text Content */}
+
+          <div className="md:w-1/2 text-lg font-light mb-8 p-8 md:mb-0">
+            <p className="text-white mb-4">
+              Digital World is a leading printing press based in Rawalpindi,
+              dedicated to delivering high-quality printing solutions at
+              affordable prices. We specialize in crafting exquisite wedding
+              cards, innovative penaflex banners, and professional visiting
+              cards that make a lasting impression.
+            </p>
+            <p className="text-white">
+              With years of experience and a passion for creativity, our
+              dedicated team combines state-of-the-art technology with
+              personalized customer service. We take pride in our quick
+              turnaround times and commitment to excellence, ensuring every
+              project meets the highest standards.
+            </p>
+            <div>
+              <h3 className="text-xl mt-4 font-semibold text-white">
+                Arif Khan
+              </h3>
+              <p className="text-white">Owner & Founder</p>
+            </div>
+          </div>
+          {/* Image or Visual */}
+          <div className="md:w-1/2 flex p-8  h-full justify-center">
+            <Image
+              src="/images/digitalworld.jpg"
+              alt="Digital World Printing Press"
+              className="  h-full"
+              width={600}
+              height={600}
+            />
           </div>
         </div>
       </section>
