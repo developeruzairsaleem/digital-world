@@ -11,7 +11,7 @@ import { PiCardsFill } from "react-icons/pi";
 export default function Home() {
   return (
     <div className="max-w-[1100px]  mx-auto p-2">
-      <header className=" home_header h-screen ">
+      <header className=" home_header min-h-screen ">
         <div className="absolute top-1/3 left-1/3 w-50 h-50 -z-10 bg-blue-200 blur-3xl pointer-events-none"></div>
         <div className="absolute top-2/4 left-1/3 w-50 h-50 -z-10 bg-pink-200 blur-3xl pointer-events-none"></div>
         <Navbar />
@@ -113,6 +113,158 @@ export default function Home() {
               >
                 Learn More
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* why choose us */}
+      <section id="why-choose-us" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-pink-900 text-center mb-12">
+            Why Choose Digital World
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Local Expertise */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0 text-pink-800 mr-4">
+                {/* Example icon: Location Pin */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 21c-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8s8 3.582 8 8c0 4.418-3.582 8-8 8z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-600">
+                  Local Expertise
+                </h3>
+                <p className="text-gray-500">
+                  Based in Rawalpindi, we understand the local market and
+                  provide tailored printing solutions for your needs.
+                </p>
+              </div>
+            </div>
+            {/* High-Quality Printing */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0 text-pink-800 mr-4">
+                {/* Example icon: Quality Badge */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-600">
+                  High-Quality Printing
+                </h3>
+                <p className="text-gray-500">
+                  We use state-of-the-art printing technology ensuring every
+                  wedding card, penaflex banner, and visiting card meets
+                  exceptional quality standards.
+                </p>
+              </div>
+            </div>
+            {/* Affordable Pricing */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0 text-pink-800 mr-4">
+                {/* Example icon: Price Tag */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 2l8 8-8 8-8-8 8-8z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-600">
+                  Affordable Pricing
+                </h3>
+                <p className="text-gray-500">
+                  Enjoy competitive pricing without compromising on quality,
+                  making premium printing accessible for every budget.
+                </p>
+              </div>
+            </div>
+            {/* Quick Turnaround */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0 text-pink-800 mr-4">
+                {/* Example icon: Clock */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6v6l4 2"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-600">
+                  Quick Turnaround
+                </h3>
+                <p className="text-gray-500">
+                  Fast, reliable service ensures your projects are completed on
+                  schedule, keeping your deadlines intact.
+                </p>
+              </div>
             </div>
           </div>
         </div>
