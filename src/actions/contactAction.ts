@@ -27,6 +27,7 @@ async function connectToDb() {
  * Server Action to save the contact details.
  */
 export async function saveContactAction(state: undefined, formData: FormData) {
+  console.log("current state", state);
   const name = formData.get("name");
   const phone = formData.get("phone");
   const message = formData.get("message");

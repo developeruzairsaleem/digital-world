@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Link from "next/link";
 
 // app/thank-you/page.jsx

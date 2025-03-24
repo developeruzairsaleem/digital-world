@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css"; // global CSS file
-import Head from "next/head";
+// import Head from "next/head";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";

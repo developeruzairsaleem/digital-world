@@ -9,6 +9,7 @@ export default function Form() {
     saveContactAction,
     initialState
   );
+  console.log(state);
   return (
     <form
       action={formAction}

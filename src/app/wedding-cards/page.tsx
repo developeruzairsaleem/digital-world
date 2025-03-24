@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Footer from "@/components/Footer";
@@ -5,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
-
 // app/services/wedding-cards/page.jsx
 export default function WeddingCardsPage() {
   return (
