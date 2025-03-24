@@ -1,5 +1,3 @@
-// "use client";
-
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,36 +11,39 @@ import Form from "@/components/Form";
 export default function Home() {
   return (
     <div className="">
-      <header className="max-w-[1100px]  md:mx-auto p-2  home_header min-h-screen ">
-        <div className="absolute top-1/3 left-1/3 w-50 h-50 -z-10 bg-blue-200 blur-3xl pointer-events-none"></div>
-        <div className="absolute top-2/4 left-1/3 w-50 h-50 -z-10 bg-pink-200 blur-3xl pointer-events-none"></div>
-        <Navbar />
-        <div className="flex flex-wrap justify-between  items-center mt-10">
-          <div className="w-full md:w-2/4 ">
-            <h1 className="text-5xl text-blue-900 mb-5">
+      {/* <header className="max-w-[1100px]  md:mx-auto p-2  home_header min-h-screen "> */}
+      <header
+        className="relative h-[100vh] items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/visiting-1.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        {/* <div className="absolute top-1/3 left-1/3 w-50 h-50 -z-10 bg-blue-200 blur-3xl pointer-events-none"></div> */}
+        {/* <div className="absolute top-2/4 left-1/3 w-50 h-50 -z-10 bg-pink-200 blur-3xl pointer-events-none"></div> */}
+        <div className="w-full z-10 relative bg-white">
+          <div className="p-2 mx-auto max-w-[1100px]">
+            <Navbar />
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-between z-20 text-center relative sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-1/2   items-center mt-10">
+          <div className="w-full ">
+            <h1 className="text-3xl font-bold mt-14 sm:mt-2 sm:text-3xl md:text-5xl text-white mb-5">
               Digital World <br /> Your Trusted Local Printing Press
             </h1>
-            <p className="text-lg font-light">
+
+            <p className="sm:text-md sm:block hidden md:text-lg font-light text-white">
               At Digital World Printing Press, we design and print wedding
-              cards, striking penaflex banners, and professional visiting cards
-              — all at affordable prices across Pakistan. Let us help you make a
-              lasting impression!
+              cards, panaflex, and visiting cards — all at affordable prices
+              across Rawalpinding, Pakistan.
             </p>
             <Link
               href={"/contact"}
-              className="bg-pink-800 font-semibold hover:bg-pink-900 hover:transition-all text-white px-10 py-5 inline-block mt-4"
+              className="bg-pink-600 font-semibold hover:bg-pink-700 py-3 px-8 rounded- hover:transition-all text-white rounded-full transition duration-300 inline-block mt-4"
             >
               Contact Us
             </Link>
           </div>
-
-          <Image
-            src={"/images/wedding-card.png"}
-            alt="wedding card"
-            className="rounded-2xl md:w-1/3 hidden md:block"
-            width={700}
-            height={700}
-          />
         </div>
       </header>
       {/* <section className="services">
@@ -71,27 +72,27 @@ export default function Home() {
                 your special day.
               </p>
               <Link
-                href="/services/wedding-cards"
+                href="/wedding-cards"
                 className="mt-auto inline-block text-pink-800 hover:underline"
               >
                 Learn More
               </Link>
             </div>
-            {/* Penaflex Printing */}
+            {/* panaflex Printing */}
             <div className="bg-white p-6 h-80 hover:scale-110 transition-all rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.5)] flex flex-col items-center">
               <div className="mb-4">
-                {/* Penaflex icon (replace with your preferred icon) */}
+                {/* panaflex icon (replace with your preferred icon) */}
                 <PiPaperclipHorizontal className="text-6xl text-pink-700" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">
-                Penaflex Printing
+                Panaflex Printing
               </h3>
               <p className="text-gray-600 text-center my-3">
-                High-quality penaflex designs for banners and signage that make
+                High-quality panaflex designs for banners and signage that make
                 a lasting impact.
               </p>
               <Link
-                href="/services/penaflex-printing"
+                href="/panaflex"
                 className="mt-auto inline-block text-pink-800 hover:underline"
               >
                 Learn More
@@ -110,7 +111,7 @@ export default function Home() {
                 impression.
               </p>
               <Link
-                href="/services/visiting-cards"
+                href="/visiting-cards"
                 className="mt-auto inline-block text-pink-800 hover:underline"
               >
                 Learn More
@@ -196,7 +197,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-500">
                   We use state-of-the-art printing technology ensuring every
-                  wedding card, penaflex banner, and visiting card meets
+                  wedding card, panaflex banner, and visiting card meets
                   exceptional quality standards.
                 </p>
               </div>
@@ -287,7 +288,7 @@ export default function Home() {
               Digital World is a leading printing press based in Rawalpindi,
               dedicated to delivering high-quality printing solutions at
               affordable prices. We specialize in crafting exquisite wedding
-              cards, innovative penaflex banners, and professional visiting
+              cards, innovative panaflex banners, and professional visiting
               cards that make a lasting impression.
             </p>
             <p className="text-white">
@@ -325,7 +326,7 @@ export default function Home() {
           <p className="text-gray-500 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             At Digital World, we blend creativity with quality to deliver
             premium printing solutions—from stunning wedding cards to
-            eye-catching penaflex designs and professional visiting cards. Let’s
+            eye-catching panaflex designs and professional visiting cards. Let’s
             bring your vision to life!
           </p>
           {/* Contact Form */}

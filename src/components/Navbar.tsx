@@ -15,7 +15,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <nav className="bg-white border-gray-200 mb-4 border-b overflow-hidden">
+    <nav className="bg-white border-gray-200 w-full mb-4 border-b overflow-hidden">
       <div className="container overflow-hidden flex items-center w-full justify-between h-16">
         {/* Logo */}
         <div className="flex items-center">
@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center sm:gap-2 lg:gap-4">
           <Link
             href="/"
             className={`font-semibold ${
@@ -40,12 +40,32 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/services"
+            href="/visiting-cards"
             className={`font-semibold ${
-              pathname === "/services" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+              pathname === "/visiting-cards"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800"
             }`}
           >
-            Services
+            Visiting Cards
+          </Link>
+          <Link
+            href="/wedding-cards"
+            className={`font-semibold ${
+              pathname === "/wedding-cards"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800"
+            }`}
+          >
+            Wedding Cards
+          </Link>
+          <Link
+            href="/panaflex"
+            className={`font-semibold ${
+              pathname === "/panaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+            }`}
+          >
+            Panaflex
           </Link>
           <Link
             href="/about"
@@ -62,24 +82,6 @@ export default function Navbar() {
             }`}
           >
             Contact Us
-          </Link>
-          <Link
-            href="/wedding-cards"
-            className={`font-semibold ${
-              pathname === "/wedding-cards"
-                ? PRIMARY_TEXT_COLOR
-                : "text-gray-800"
-            }`}
-          >
-            Wedding Cards
-          </Link>
-          <Link
-            href="/penaflex"
-            className={`font-semibold ${
-              pathname === "/penaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
-            }`}
-          >
-            Penaflex
           </Link>
 
           {/* Call Icon with Phone Number */}
@@ -147,13 +149,35 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/services"
+              href="/visiting-cards"
               onClick={() => setIsOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium ${
-                pathname === "/services" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+                pathname === "/visiting-cards"
+                  ? PRIMARY_TEXT_COLOR
+                  : "text-gray-800"
               } hover:bg-gray-100`}
             >
-              Services
+              Visiting Cards
+            </Link>
+            <Link
+              href="/wedding-cards"
+              onClick={() => setIsOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                pathname === "/wedding-cards"
+                  ? PRIMARY_TEXT_COLOR
+                  : "text-gray-800"
+              } hover:bg-gray-100`}
+            >
+              Wedding Cards
+            </Link>
+            <Link
+              href="/panaflex"
+              onClick={() => setIsOpen(false)}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                pathname === "/panaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+              } hover:bg-gray-100`}
+            >
+              Panaflex
             </Link>
             <Link
               href="/about"
@@ -172,26 +196,6 @@ export default function Navbar() {
               } hover:bg-gray-100`}
             >
               Contact Us
-            </Link>
-            <Link
-              href="/wedding-cards"
-              onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                pathname === "/wedding-cards"
-                  ? PRIMARY_TEXT_COLOR
-                  : "text-gray-800"
-              } hover:bg-gray-100`}
-            >
-              Wedding Cards
-            </Link>
-            <Link
-              href="/penaflex"
-              onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                pathname === "/penaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
-              } hover:bg-gray-100`}
-            >
-              Penaflex
             </Link>
             {/* Mobile Call Icon with Phone Number */}
             <Link

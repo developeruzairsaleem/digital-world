@@ -64,8 +64,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white">
-                  Services
+                <Link href="/panaflex" className="hover:text-white">
+                  Panaflex
                 </Link>
               </li>
 
@@ -80,8 +80,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/penaflex" className="hover:text-white">
-                  Penaflex
+                <Link href="/visiting-cards" className="hover:text-white">
+                  Visiting Cards
                 </Link>
               </li>
             </ul>
