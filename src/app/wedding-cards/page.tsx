@@ -14,8 +14,8 @@ export default function WeddingCardsPage() {
       <section className=" bg-white h-screen p-2 max-w-[1100px] md:mx-auto">
         <Navbar />
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl mt-7 font-bold text-gray-800 mb-4">
-            Exquisite Wedding Card Designs
+          <h1 className="text-4xl md:text-5xl mt-24 font-bold text-gray-800 mb-4">
+            Premium Wedding Card Designs
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             At Digital World, we transform your love story into beautifully

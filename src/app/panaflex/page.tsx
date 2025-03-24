@@ -12,7 +12,7 @@ export default function PanaflexPage() {
       {/* Hero Section */}
       <section className="bg-white h-screen p-2 max-w-[1100px] md:mx-auto">
         <Navbar />
-        <div className="container mx-auto px-4 text-center mt-8">
+        <div className="container mx-auto px-4 text-center mt-24">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Eye-Catching Panaflex Designs
           </h1>
