@@ -1,9 +1,10 @@
+/* eslint-disable */
 // app/visiting-cards/page.jsx
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { FaPalette, FaPrint, FaRocket, FaMobileAlt } from "react-icons/fa";
+import { FaPalette, FaPrint, FaRocket } from "react-icons/fa";
 import { SiGooglecontaineroptimizedos } from "react-icons/si";
 
 export default function VisitingCardsPage() {

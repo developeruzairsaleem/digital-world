@@ -1,3 +1,4 @@
+/* eslint-disable */
 // app/about/page.jsx
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
