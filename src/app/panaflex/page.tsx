@@ -86,7 +86,7 @@ export default function PanaflexPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Image
-              src="/images/panaflex-2.JPEG"
+              src="/images/panaflex-2.jpg"
               alt="Panaflex Design 1"
               className="hover:scale-110 transition-transform w-full h-64 object-cover rounded-lg shadow-md"
               width={200}
@@ -100,7 +100,7 @@ export default function PanaflexPage() {
               height={200}
             />
             <Image
-              src="/images/panaflex-4.PNG"
+              src="/images/panaflex-8.jpg"
               alt="Panaflex Design 3"
               className="hover:scale-110 transition-transform w-full h-64 object-cover rounded-lg shadow-md"
               width={200}
