@@ -209,7 +209,7 @@ export default function Navbar() {
             <Link
               href="tel:03005050947"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium flex items-center gap-1 text-pink-900 hover:bg-gray-100"
+              className="px-3 py-2 rounded-md text-base font-medium flex items-center gap-1 text-pink-900 hover:bg-gray-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
