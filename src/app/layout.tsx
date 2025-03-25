@@ -11,9 +11,6 @@ export const metadata = {
   title: "Printing Press Rawalpindi | Printing Press Services in Rawalpindi",
   description:
     "Discover top-notch printing solutions in Rawalpindi and all across Pakistan. Our printing press offers customizable and affordable services including wedding cards, panaflex banners, visiting cards and premium quality business cards.",
-  icons: {
-    icon: "/favicon.ico",
-  },
   keywords:
     "panaflex rawalpindi, visiting cards rawalpindi, wedding cards, panaflex printing rawalpindi, Digital World, printing press Rawalpindi, printing press Pakistan",
   openGraph: {

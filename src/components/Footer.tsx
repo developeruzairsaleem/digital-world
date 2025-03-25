@@ -1,6 +1,7 @@
 // components/Footer.jsx
 
 import Link from "next/link";
+import Subscribe from "./Subscribe";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 p-2 pt-10 ">
@@ -106,21 +107,7 @@ export default function Footer() {
               Subscribe to get the latest updates on our printing solutions and
               special offers.
             </p>
-            <form action="/api/subscribe" method="POST" className="flex">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email address"
-                className="w-full px-4 py-2 rounded-l-md border border-gray-100 mr-2 focus:outline-none text-white-900"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md"
-              >
-                Subscribe
-              </button>
-            </form>
+            <Subscribe />
           </div>
         </div>
       </div>
