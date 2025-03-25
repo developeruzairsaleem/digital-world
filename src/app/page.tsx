@@ -277,13 +277,13 @@ export default function Home() {
       </section>
 
       <section id="about" className=" bg-pink-900">
-        <h2 className="text-4xl  text-center pt-16 font-bold text-white mb-8">
+        <h2 className="text-4xl  text-center px-2 pt-16 font-bold text-white mb-8">
           About Our Printing Press
         </h2>
-        <div className="container flex flex-col md:flex-row  max-w-[1100px]  mx-auto p-2">
+        <div className="container flex flex-col items-center text-center md:text-justify font-light md:flex-row  max-w-[1100px]  mx-auto p-2">
           {/* Text Content */}
 
-          <div className="md:w-1/2 text-lg  mb-8 p-8 md:mb-0">
+          <div className="md:w-1/2  text-lg  mb-8 p-8 md:mb-0">
             <p className="text-white mb-4">
               Digital World is a leading printing press based in Rawalpindi,
               dedicated to delivering high-quality printing solutions at
@@ -299,10 +299,10 @@ export default function Home() {
               project meets the highest standards.
             </p>
             <div>
-              <h3 className="text-xl mt-4 font-semibold text-white">
+              {/* <h3 className="text-xl mt-4 font-semibold text-white">
                 Arif Khan
               </h3>
-              <p className="text-white">Owner & Founder</p>
+              <p className="text-white">Owner & Founder</p> */}
             </div>
           </div>
           {/* Image or Visual */}
