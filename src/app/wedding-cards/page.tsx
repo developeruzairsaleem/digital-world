@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -7,6 +6,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 // app/services/wedding-cards/page.jsx
+
+export const metadata = {
+  title:
+    "Wedding Cards Rawalpindi | Custom Wedding Card Printing by Digital World",
+  description:
+    "Discover exquisite wedding card designs crafted to perfection in Rawalpindi. Digital World offers custom wedding card printing services that capture the essence of your special day.",
+  keywords:
+    "wedding cards rawalpindi, custom wedding cards, wedding card printing, Digital World",
+  openGraph: {
+    title: "Wedding Cards Rawalpindi | Digital World",
+    description:
+      "Custom-designed wedding cards that make your special day unforgettable.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/wedding-cards`,
+    site_name: "Digital World Printing Press",
+  },
+  twitter: {
+    title: "Wedding Cards Rawalpindi | Digital World",
+    description:
+      "Elevate your wedding with beautifully crafted, custom wedding cards by Digital World.",
+  },
+};
+
 export default function WeddingCardsPage() {
   return (
     <main className="">

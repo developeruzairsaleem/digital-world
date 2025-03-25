@@ -5,6 +5,26 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "About Digital World | Leading Printing Press in Rawalpindi",
+  description:
+    "Learn about Digital World—your trusted printing press in Rawalpindi. Discover our story, mission, and commitment to delivering innovative, high-quality printing solutions across Pakistan.",
+  keywords:
+    "about Digital World, printing press Rawalpindi, printing services, printing company Pakistan",
+  openGraph: {
+    title: "About Digital World | Leading Printing Press in Rawalpindi",
+    description:
+      "Discover our journey and values at Digital World. We are committed to excellence in printing services, from custom wedding cards to penaflex banners.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+    site_name: "Digital World Printing Press",
+  },
+  twitter: {
+    title: "About Digital World | Leading Printing Press in Rawalpindi",
+    description:
+      "Get to know Digital World, your expert printing partner in Rawalpindi.",
+  },
+};
+
 export default function AboutPage() {
   return (
     <main className="">

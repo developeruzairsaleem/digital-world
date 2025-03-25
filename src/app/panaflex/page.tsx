@@ -5,6 +5,26 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FaCheck } from "react-icons/fa";
+export const metadata = {
+  title:
+    "Panaflex Printing Rawalpindi | Innovative Banner & Panaflex Solutions by Digital World",
+  description:
+    "Enhance your brand visibility with Digital World’s panaflex printing services in Rawalpindi. Our innovative panaflex banners design and printing solutions deliver vibrant, durable, and eye-catching results.",
+  keywords:
+    "panaflex printing rawalpindi, panaflex banners, backlight board printing, Digital World",
+  openGraph: {
+    title: "Panaflex Printing Rawalpindi | Digital World",
+    description:
+      "Innovative panaflex printing for eye-catching banners and panaflex in Rawalpindi.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/penaflex`,
+    site_name: "Digital World Printing Press",
+  },
+  twitter: {
+    title: "Panaflex Printing Rawalpindi | Digital World",
+    description:
+      "Discover creative and durable panaflex printing solutions for your brand.",
+  },
+};
 
 export default function PanaflexPage() {
   return (

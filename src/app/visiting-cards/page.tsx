@@ -7,6 +7,29 @@ import Footer from "@/components/Footer";
 import { FaPalette, FaPrint, FaRocket } from "react-icons/fa";
 import { SiGooglecontaineroptimizedos } from "react-icons/si";
 
+export const metadata = {
+  title:
+    "Visiting Cards Rawalpindi | Professional Business Card Printing by Digital World",
+  description:
+    "Make a lasting first impression with our custom visiting card printing services in Rawalpindi. Digital World delivers professional and uniquely designed business cards that elevate your brand.",
+  keywords:
+    "visiting cards rawalpindi, business card printing, custom visiting cards, Digital World",
+  openGraph: {
+    title:
+      "Visiting Cards Rawalpindi |Business Cards Rawalpindi| Digital World",
+    description:
+      "Professional, high-quality visiting cards designed to impress.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/visiting-cards`,
+    site_name: "Digital World Printing Press",
+  },
+  twitter: {
+    title:
+      "Visiting Cards Rawalpindi |Business Cards Rawalpindi |Digital World",
+    description:
+      "Stand out with custom, professional visiting cards by Digital World.",
+  },
+};
+
 export default function VisitingCardsPage() {
   return (
     <main className="">

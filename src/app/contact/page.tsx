@@ -3,8 +3,26 @@
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";
 import Navbar from "@/components/Navbar";
+export const metadata = {
+  title: "Contact Digital World | Trusted Printing Press in Rawalpindi",
+  description:
+    "Get in touch with Digital World, your trusted printing press in Rawalpindi. Contact us for custom wedding cards, panaflex banners, visiting cards, and other premium printing solutions.",
+  keywords:
+    "contact Digital World, printing press Rawalpindi, printing services, Digital World contact",
+  openGraph: {
+    title: "Contact Digital World | Printing Press in Rawalpindi",
+    description:
+      "Reach out to Digital World for personalized and affordable printing solutions in Rawalpindi.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+    site_name: "Digital World Printing Press",
+  },
+  twitter: {
+    title: "Contact Digital World | Printing Press in Rawalpindi",
+    description:
+      "Connect with Digital World for premium printing services and custom designs.",
+  },
+};
 
-// --- Client Component (Contact Page) ---
 export default function ContactPage() {
   return (
     <>

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const PRIMARY_TEXT_COLOR =
-    "bg-pink-800 text-white rounded-full hover:bg-pink-900 p-2 px-4 ";
+    "bg-pink-800 text-white rounded-full hover:bg-pink-900";
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,24 +17,31 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white border-gray-200 w-full mb-4 border-b overflow-hidden">
-      <div className="container overflow-hidden flex items-center w-full justify-between h-16">
+      <div className="container overflow-hidden flex items-center w-full justify-between h-18">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/">
+          <Link
+            href="/"
+            className="flex flex-col cursor-pointer py-2 items-center  gap-2"
+          >
             <Image
-              width={100}
-              height={100}
+              width={50}
+              className="rounded-full"
+              height={50}
               src="/images/logo.png"
               alt="Digital World Logo"
             />
+            <label className=" font-bold text-md text-gray-700 flex leading-tight flex-col cursor-pointer">
+              Digital World
+            </label>
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center sm:gap-2 lg:gap-4">
+        <div className="hidden md:flex items-center ">
           <Link
             href="/"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/" ? PRIMARY_TEXT_COLOR : "text-gray-800"
             }`}
           >
@@ -42,7 +49,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/visiting-cards"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/visiting-cards"
                 ? PRIMARY_TEXT_COLOR
                 : "text-gray-800"
@@ -52,7 +59,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/wedding-cards"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/wedding-cards"
                 ? PRIMARY_TEXT_COLOR
                 : "text-gray-800"
@@ -62,7 +69,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/panaflex"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/panaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
             }`}
           >
@@ -70,7 +77,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/about" ? PRIMARY_TEXT_COLOR : "text-gray-800"
             }`}
           >
@@ -78,7 +85,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`font-semibold ${
+            className={`font-semibold p-2 px-3 ${
               pathname === "/contact" ? PRIMARY_TEXT_COLOR : "text-gray-800"
             }`}
           >
@@ -88,7 +95,7 @@ export default function Navbar() {
           {/* Call Icon with Phone Number */}
           <Link
             href="tel:03005050947"
-            className="flex items-center gap-1 font-semibold text-pink-900"
+            className="lg:flex items-center p-2 px-3 gap-1 hidden font-semibold text-pink-900"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
