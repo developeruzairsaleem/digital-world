@@ -13,7 +13,7 @@ const connectToDB = async () => {
   await mongoose.connect(process.env.MONGODB_URI || "");
 };
 
-export const createSubscriber = async (state: Boolean, formData: FormData) => {
+export const createSubscriber = async (state: boolean, formData: FormData) => {
   const email = formData.get("email");
 
   console.log(state);

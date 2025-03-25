@@ -5,7 +5,7 @@ import { useActionState } from "react";
 
 export default function Subscribe() {
   const [state, formAction, pending] = useActionState(createSubscriber, false);
-
+  console.log("Submitted", state);
   return (
     <form action={formAction} className="flex">
       <input
