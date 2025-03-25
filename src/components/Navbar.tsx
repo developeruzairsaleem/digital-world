@@ -41,52 +41,60 @@ export default function Navbar() {
         <div className="hidden md:flex items-center ">
           <Link
             href="/"
-            className={`font-semibold p-2 px-3 ${
-              pathname === "/" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
+              pathname === "/"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800 hover:scale-110"
             }`}
           >
             Home
           </Link>
           <Link
             href="/visiting-cards"
-            className={`font-semibold p-2 px-3 ${
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
               pathname === "/visiting-cards"
                 ? PRIMARY_TEXT_COLOR
-                : "text-gray-800"
+                : "text-gray-800  hover:scale-110"
             }`}
           >
             Visiting Cards
           </Link>
           <Link
             href="/wedding-cards"
-            className={`font-semibold p-2 px-3 ${
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
               pathname === "/wedding-cards"
                 ? PRIMARY_TEXT_COLOR
-                : "text-gray-800"
+                : "text-gray-800 hover:scale-110 "
             }`}
           >
             Wedding Cards
           </Link>
           <Link
             href="/panaflex"
-            className={`font-semibold p-2 px-3 ${
-              pathname === "/panaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
+              pathname === "/panaflex"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800 hover:scale-110"
             }`}
           >
             Panaflex
           </Link>
           <Link
             href="/about"
-            className={`font-semibold p-2 px-3 ${
-              pathname === "/about" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
+              pathname === "/about"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800 hover:scale-110"
             }`}
           >
             About Us
           </Link>
           <Link
             href="/contact"
-            className={`font-semibold p-2 px-3 ${
-              pathname === "/contact" ? PRIMARY_TEXT_COLOR : "text-gray-800"
+            className={`font-semibold p-2 px-3 transition transform duration-300 ${
+              pathname === "/contact"
+                ? PRIMARY_TEXT_COLOR
+                : "text-gray-800 hover:scale-110 "
             }`}
           >
             Contact Us
@@ -150,7 +158,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/" ? PRIMARY_TEXT_COLOR : "text-gray-800"
               } hover:bg-gray-100`}
             >
@@ -159,7 +167,7 @@ export default function Navbar() {
             <Link
               href="/visiting-cards"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/visiting-cards"
                   ? PRIMARY_TEXT_COLOR
                   : "text-gray-800"
@@ -170,7 +178,7 @@ export default function Navbar() {
             <Link
               href="/wedding-cards"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/wedding-cards"
                   ? PRIMARY_TEXT_COLOR
                   : "text-gray-800"
@@ -181,7 +189,7 @@ export default function Navbar() {
             <Link
               href="/panaflex"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/panaflex" ? PRIMARY_TEXT_COLOR : "text-gray-800"
               } hover:bg-gray-100`}
             >
@@ -190,7 +198,7 @@ export default function Navbar() {
             <Link
               href="/about"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/about" ? PRIMARY_TEXT_COLOR : "text-gray-800"
               } hover:bg-gray-100`}
             >
@@ -199,7 +207,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition transform duration-100 active:scale-95  ${
                 pathname === "/contact" ? PRIMARY_TEXT_COLOR : "text-gray-800"
               } hover:bg-gray-100`}
             >
@@ -209,7 +217,7 @@ export default function Navbar() {
             <Link
               href="tel:03005050947"
               onClick={() => setIsOpen(false)}
-              className="px-3 py-2 rounded-md text-base font-medium flex items-center gap-1 text-pink-900 hover:bg-gray-100"
+              className="px-3 py-2 rounded-md text-base font-medium flex items-center gap-1 text-pink-900 hover:bg-gray-100 transition transform duration-100 active:scale-95 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
