@@ -8,7 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
-  const PRIMARY_TEXT_COLOR = "text-pink-900";
+  const PRIMARY_TEXT_COLOR =
+    "bg-pink-800 text-white rounded-full hover:bg-pink-900 p-2 px-4 ";
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -137,8 +138,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden relative z-50">
+          <div className="px-2 pt-2 pb-3 space-y-1 z-50 sm:px-3">
             <Link
               href="/"
               onClick={() => setIsOpen(false)}

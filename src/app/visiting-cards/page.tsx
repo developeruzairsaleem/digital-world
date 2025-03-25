@@ -24,7 +24,7 @@ export default function VisitingCardsPage() {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 text-center text-white px-4">
+        <div className="relative z-5 text-center text-white px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             Make Your First Impression Count
           </h1>
